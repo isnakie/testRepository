@@ -1,0 +1,70 @@
+{{extend 'layout.html'}}
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.home-div{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -moz-column-fill: auto;
+    column-fill: auto;
+    height: 1000px;
+}
+
+</style>
+</head><br>
+<font size="20">Welcome to Blash!</font><br>
+
+
+<div class="home-div">
+    <pre><span style="font-size: 20px"><strong>Tutorial</strong></span></pre>
+    <a href="{{=URL('tutorial','index')}}">
+        <img src="{{=URL('static','tutorial.png')}}" style="width:256px;height:256px;">
+        <br><br>
+    </a>
+
+    <pre><span style="font-size: 20px"><strong>Stock</strong></span></pre>
+    <a href="{{=URL('stocks','index')}}">
+        <img src="{{=URL('static','Stock.png')}}" style="width:256px;height:256px;">
+        <br><br>
+    </a>
+    <pre><span style="font-size: 20px"><strong>Portfolio</strong></span></pre>
+    <a href="http://blash.pythonanywhere.com/blash/portfolio/index.html">
+        <img src="{{=URL('static','Portfolio.png')}}" style="width:256px;height:256px;">
+        <br><br>
+    </a>
+    <pre><span style="font-size: 20px"><strong>News</strong></span></pre>
+    <a href="http://blash.pythonanywhere.com/blash/newsRep/index.html">
+        <img src="{{=URL('static','News.png')}}" style="width:256px;height:256px;">
+    </a><br><br>
+    <pre><span style="font-size: 20px"><strong>Calculator</strong></span></pre>
+    <a href="{{=URL('calculator','index')}}">
+        <img src="{{=URL('static','Calculator.png')}}" style="width:256px;height:256px;">
+    </a>
+    <br><br>
+</div>
+<br>
+<a href="https://blash.pythonanywhere.com/admin"><span style="font-size: 40px">Admin Interface</span></a>
